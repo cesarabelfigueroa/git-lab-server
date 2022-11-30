@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  async getHello(): Promise<string> {
-    return await this.appService.getHello();
+  async getCommits():  Promise<Array<any>> {
+    return await this.appService.getCommits();
   }
 }
